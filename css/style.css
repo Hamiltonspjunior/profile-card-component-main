@@ -4,10 +4,10 @@
 }
 
 :root {
-  --dark-cyan: hsl(185, 75%, 39%);
-  --dark-desaturated-blue: hsl(229, 23%, 23%);
-  --dark-grayish-blue: hsl(227, 10%, 46%);
-  --dark-gray: hsl(0, 0%, 59%);
+  --dark-cyan: #19a2ae;
+  --dark-desaturated-blue: #2d3248;
+  --dark-grayish-blue: #6a6f81;
+  --dark-gray: #969696;
 }
 
 :root, html {
@@ -16,8 +16,13 @@
 
 body {
   font-size: 1.8rem;
-  background:hsl(185, 75%, 39%);
-  background: var(--dark-cyan);
+  background: url(../images/bg-pattern-top.svg) right 35vw top -30vh, 
+              url(../images/bg-pattern-bottom.svg) left 35vw bottom -30vh;
+  background-color: #19a2ae;
+  background-color: var(--dark-cyan);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  height: 100vh;
 }
 
 ul[class] {
