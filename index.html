@@ -12,40 +12,40 @@
   <link rel="stylesheet" href="./css/style.css">
   
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <div class="profile-card">
-    <img src="./images/image-victor.jpg" class="profile-card_photo" alt="Victor Photo">
+    <div class="profile-card">
+      <div class="profile-card__image"></div>
+      
+      <figure class="profile-card__photo">
+        <img src="./images/image-victor.jpg" class="user-photo" alt="Victor Photo">
+      </figure>
+  
+      <div class="profile-card__info">
+        <p class="profile-card__name">Victor Crest <span class="profile-card__age">26</span></p>
+  
+        <span class="profile-card__city">London</span>
+      </div>
+  
+      <ul class="profile-card__stats">
+        <li>
+          80K
+          <span class="profile-card__statsNames">Followers</span>
+        </li>
+        <li>
+          803K
+          <span class="profile-card__statsNames">Likes</span>
+        </li>
+        <li>
+          1.4K
+          <span class="profile-card__statsNames">Photos</span>
+        </li>
+      </ul>
+    </div>
 
-    <p class="profile-card_name">Victor Crest <span class="profile-card_age">26</span></p>
-
-    <span class="profile-card_city">London</span>
-
-    <ul class="profile-card_stats">
-      <li>
-        80K
-        <span class="profile-card_statsNames">Followers</span>
-      </li>
-      <li>
-        803K
-        <span class="profile-card_statsNames">Likes</span>
-      </li>
-      <li>
-        1.4K
-        <span class="profile-card_statsNames">Photos</span>
-      </li>
-    </ul>
-  </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/Hamiltonspjunior">Hamilton Junior</a>.
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="__blank"><strong>Frontend Mentor</strong></a>. 
+      Coded by <a href="https://github.com/Hamiltonspjunior"><strong>Hamilton Junior</strong></a>.
+    </div>
 </body>
 </html>

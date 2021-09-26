@@ -8,28 +8,126 @@
   --dark-desaturated-blue: #2d3248;
   --dark-grayish-blue: #6a6f81;
   --dark-gray: #969696;
+
+  --profile-card-bg: #fff;
+  --profile-card-default-text-color: var(--dark-desaturated-blue);
+  --profile-card-stats-text-color: var(--dark-gray);
+  --profile-card-city-color: var(--dark-grayish-blue);
 }
 
 :root, html {
   font-size: 10px;
+  line-height: 1;
 }
 
 body {
-  font-size: 1.8rem;
+  align-items: center;
   background: url(../images/bg-pattern-top.svg) right 35vw top -30vh, 
-              url(../images/bg-pattern-bottom.svg) left 35vw bottom -30vh;
+  url(../images/bg-pattern-bottom.svg) left 35vw bottom -30vh;
   background-color: #19a2ae;
   background-color: var(--dark-cyan);
   background-repeat: no-repeat;
   background-size: 150%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  justify-content: center;
   height: 100vh;
+  padding: 0 1.5rem;
 }
 
 ul[class] {
   list-style: none;
 }
 
-p, ul {
+p, ul, figure {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.profile-card {
+  background-color: var(--profile-card-bg);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgb(0 0 0 / 25%);
+  color: var(--profile-card-default-text-color);
+  max-width: 325px;
+  width: 100%;
+}
+
+.profile-card__image {
+  background: url(../images/bg-pattern-card.svg) no-repeat center;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  height: 140px;
+}
+
+.profile-card__photo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -53px;
+}
+
+.profile-card__info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2.3rem 0;
+}
+
+.profile-card__name {
+  font-weight: 700;
+}
+
+.profile-card__age {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+.profile-card__city {
+  color: var(--dark-grayish-blue);
+  font-size: 1.4rem;
+  margin-top: 1.2rem;
+}
+
+.profile-card__stats {
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  font-weight: 700;
+  justify-content: space-evenly;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.profile-card__statsNames {
+  display: block;
+  color: var(--dark-grayish-blue);
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .15rem;
+  margin-top: 1rem;
+}
+
+.user-photo {
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+.attribution { 
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem; 
+}
+
+
+@media (min-width: 768px) {
+  body {
+    background-position: right 52vw top -60vh, left 44vw bottom -75vh;
+    background-size: 70%;
+  }
 }
