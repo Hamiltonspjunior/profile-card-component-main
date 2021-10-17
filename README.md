@@ -28,7 +28,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor | Profile card component](https://www.frontendmentor.io/solutions/profile-card-component-WInez4eAz)
 - Live Site URL: [Frontend Mentor | Profile card component](https://hamiltonspjunior-profile-card-component.netlify.app/)
 
 ### Built with
